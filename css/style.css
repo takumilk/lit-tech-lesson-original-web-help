@@ -15,6 +15,36 @@ header{
     width: 20vw;
 }
 
+.illust{
+    width: 200px;
+}
+
+.teacher{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.idea-man{
+    position: absolute;
+    top: 5vh;
+    left: 80vw;
+}
+
+.thinking-man{
+    position: absolute;
+    top: 70vh;
+    left: 100px;
+}
+
+.idea-girl{
+    position: absolute;
+    top: 55vh;
+    left: 85vw;
+}
+
+
+
 .title{
     position: absolute;
     top: 50%;
