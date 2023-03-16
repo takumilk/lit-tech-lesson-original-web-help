@@ -14,6 +14,7 @@ header{
 .lit-logo{
     position: absolute;
     width: 20vw;
+    margin: 20px 40px;
     z-index: 20;
 }
 
@@ -214,4 +215,9 @@ h2{
 footer{
     background-color: #184072;
     height: 200px;
+    color: #ffffff;
+    text-align: center;
+    
+    justify-content:center;
+    align-items:center;
 }
