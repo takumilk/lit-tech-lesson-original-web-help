@@ -74,7 +74,7 @@ header{
 .red-square{
     position: absolute;
     top: 40vh;
-    left: 75vw;
+    left: 77vw;
 }
 
 .title{
@@ -87,12 +87,10 @@ header{
 }
 
 .nav{
-    /* height: 100px; */
-    /* text-align: center; */
-    /* margin: 0 auto; */
+
     position: absolute;
     top: 60%;
-    left: 20%;
+    left: 23vw;
 
     /* transform: translate(-50%,-50%);  */
 }
@@ -104,6 +102,7 @@ header{
     border-radius: 50px;
     width: 192px;
     margin: 1vw;
+    box-shadow: -7px 10px 22px -4px rgba(0,0,0,0.6);
     z-index: 30;
 }
 
@@ -111,6 +110,12 @@ header{
     background-color: #E83E37;
 }
 
+.btn-pc:hover{
+    color: #E83E37;
+    border-color: #E83E37;
+    background: white;
+    /* font-size: 20px; */
+}
 .btn-first{
     background-color: #1791CB;
 }
@@ -161,6 +166,13 @@ h2{
 
 .tips{
     /* margin: 0 auto; */
+    height: 500px;
+    background-color: rgb(115, 85, 85);
+}
+
+.intro{
+    height: 200px;
+    margin: 0 auto;
 }
 
 .section-text{
@@ -176,6 +188,8 @@ h2{
 
 .contents{
     clear: left;
+    height: 300px;
+    background-color: rgb(179, 163, 163);
 }
 .content{
     width: 20vw;
@@ -184,7 +198,20 @@ h2{
     float: left;
     padding: 5px;
     margin: 10px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: whitesmoke;
+    font-size: 20px;
+    line-height: 40px;
 }
+
 .red{
     background-color: #E83E37;
+}
+
+footer{
+    background-color: #184072;
+    height: 200px;
 }
