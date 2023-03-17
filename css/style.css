@@ -136,9 +136,6 @@ section{
     height: 100vh;
 }
 
-.pc{
-    text-align: center;
-}
 
 .caption{
     font-size: 32px;
@@ -158,6 +155,20 @@ section{
     
     z-index: 30;
 }
+
+.blue{
+    border: solid 6px #1791CB;
+}
+
+.green{
+    border: solid 6px #66AE32;
+}
+
+.yellow{
+    border: solid 6px #F0C11A;
+}
+
+
 
 .section-box .caption{
     font-size: 32px;
@@ -213,10 +224,26 @@ section{
     line-height: 40px;
 }
 
-.red{
+.content-red{
     background-color: #E83E37;
 }
 
+.content-blue{
+    background-color: #1791CB;
+}
+
+.content-green{
+    background-color: #66AE32;
+}
+
+.content-yellow{
+    background-color: #F0C11A;
+}
+
+
+.other{
+    height: 80vh;
+}
 
 .faq-all{
     margin: 0 auto;
@@ -226,11 +253,6 @@ section{
     text-align: center;
 }
 
-.faqs{
-    width: 80vw;
-    /* height: 100%; */
-    margin: 0 auto;
-}
 .faq-intro{
     display: flex;
 }
@@ -239,16 +261,12 @@ section{
     text-decoration: none;
 }
 
-.faq-txt{
-    line-height: 250%;
-    margin: 0 auto;
-}
-
 .faq-img{
     position: absolute;
     left: 70vw;
-
 }
+
+
 
 
 
