@@ -5,16 +5,11 @@
 
 body{
     font-family: 'Noto Sans JP', sans-serif;
+    
 }
 
 header{
     height: 100vh;
-}
-
-.fv{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .lit-logo{
@@ -72,9 +67,10 @@ header{
 }
 
 .yellow-circle{
+    /* background-image: url(../img/yellow-circle.png); */
     position: absolute;
-    top: -30%;
-    left: 80vw;
+    top: 0%;
+    left: 87vw;
     z-index: 10;
 }
 
@@ -174,29 +170,32 @@ section{
 
 .tips{
     /* margin: 0 auto; */
-    height: 500px;
-    /* background-color: rgb(115, 85, 85); */
 }
 
 .intro{
     /* height: 200px; */
     /* margin: 0 auto; */
+    /* display: flex; */
 }
 
 .section-text{
+    width: 55vw;
     text-align: left;
-    float: left;
     padding: 30px;
     line-height: 250%;
+    margin: 0 auto;
 }
 
 .section-image{
-    float: left;
+    position: absolute;
+    top: 90px;
+    left: 65vw;
 }
 
 .contents{
-    clear: left;
     height: 300px;
+    width: 65vw;
+    margin: 0 auto;
     /* background-color: rgb(179, 163, 163); */
 }
 .content{
