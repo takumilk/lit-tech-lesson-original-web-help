@@ -4,17 +4,17 @@
 }
 
 body{
-    font-family: 'Noto Sans JP', sans-serif;
-    
+    font-family: 'Noto Sans JP';
 }
 
 header{
+    width: 100vw;
     height: 100vh;
 }
 
 .lit-logo{
     position: absolute;
-    width: 20vw;
+    width: 300px;
     margin: 20px 40px;
     z-index: 20;
 }
@@ -90,12 +90,19 @@ header{
 }
 
 .nav{
-
+    
     position: absolute;
-    top: 60%;
-    left: 23vw;
+    top: 65%;
+    left: 53%;
+    /* tarnslate で要素の縦横それぞれ50%分の長さを動かすことで、要素を中央にする. */
+    transform: translate(-50%, -50%);
+    width: 70vw;
+}
 
-    /* transform: translate(-50%,-50%);  */
+section{
+    display: block;
+    padding-top: 80px;
+    margin-top: -70px;
 }
 
 .btn{
@@ -103,22 +110,36 @@ header{
     padding: 20px;
     color: #ffffff;
     border-radius: 50px;
-    width: 192px;
+    display: inline-block;
+    text-align: center;
+    width: 176px;
     margin: 1vw;
-    box-shadow: -7px 10px 22px -4px rgba(0,0,0,0.6);
+    /* box-shadow: -7px 10px 22px -4px rgba(0,0,0,0.6); */
     z-index: 30;
 }
 
 .btn-pc{
     background-color: #E83E37;
+    border-color: #E83E37;
 }
 
 .btn-pc:hover{
     color: #E83E37;
-    border-color: #E83E37;
-    background: white;
-    /* font-size: 20px; */
+    background: #fff;
 }
+.btn-first:hover{
+    color: #1791CB;
+    background: #fff;
+}
+.btn-header:hover{
+    color: #66AE32;
+    background: #fff;
+}
+.btn-text:hover{
+    color: #F0C11A;
+    background: #fff;
+}
+
 .btn-first,
 .btn-other{
     background-color: #1791CB;
@@ -182,25 +203,41 @@ section{
     margin: 30px;
 }
 
-.intro{
-    /* height: 200px; */
-    /* margin: 0 auto; */
-    /* display: flex; */
-}
+
 
 .section-text{
-    width: 55vw;
+    width: 65vw;
     text-align: left;
-    padding: 30px;
+    padding: 10px;
     line-height: 250%;
     margin: 0 auto;
 }
 
 .section-image{
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: 68vw;
 }
+
+.masa-pc{
+    position: absolute;
+    top: 110px;
+}
+
+.masa-happy{
+    width: 9vw;
+    position: absolute;
+    top: 70px;
+}
+
+.masa{
+    width: 10vw;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+
 
 .contents{
     height: 300px;
@@ -264,7 +301,8 @@ section{
 
 .faq-img{
     position: absolute;
-    left: 70vw;
+    top: 12vh;
+    left: 65vw;
 }
 
 
@@ -291,8 +329,41 @@ footer{
     align-items:center;
 }
 
+.blue-circle-shadow{
+    
+    position: absolute;
+    top: 130vh;
+    left: 70vw;
+    z-index: -1;
+}
 
+.green-triangle-shadow{
+    position: absolute;
+    top: 240vh;
+    left: -18vw;
+    z-index: -1;
+}
 
+.red-square-shadow{
+    position: absolute;
+    top: 280vh;
+    left: 77vw;
+    z-index: -1;
+}
+
+.black-circle-shadow{
+    position: absolute;
+    top: 360vh;
+    left: -10vw;
+    z-index: -1;
+}
+
+.green-circle-shadow{
+    position: absolute;
+    top: 458vh;
+    left: 74vw;
+    z-index: -1;
+}
 
 .fuwatAnime {
     -webkit-animation-fill-mode:both;
@@ -313,4 +384,69 @@ footer{
 @keyframes fuwatAnime {
     0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
     100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+@media all and (max-width: 480px) {
+    body{
+        width: 100%;
+    }
+
+    h1{
+        margin: 0 auto;
+    }
+    .lit-logo{
+        position: absolute;
+        width: 50vw;
+        margin: 20px;
+        z-index: 100;
+    }
+
+    .nav{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .btn{
+        width: 20vw;
+    }
+
+    .green-circle{
+        position: absolute;
+        left: -120vw;
+        top: -40vh;
+        z-index: -1;
+    }
+
+    .blue-triangle{
+        position: absolute;
+        left: -130vw;
+        z-index: -2;
+    }
+
+    .title{
+        font-size: 16px;
+    }
+
+    .teacher{
+        position: relative;
+        top: 70px;
+        left: auto;
+        z-index: 0;
+        width: 100px;
+    }
+
+    .thinking-man{
+        width: 40vw;
+        position: absolute;
+        top: 80vh;
+        left: 0;
+        z-index: 0;
+        width: 100px;
+    }
+
+    .idea-man{
+        width: 120px;
+        position: absolute;
+        left: 65vw;
+
+    }
 }
