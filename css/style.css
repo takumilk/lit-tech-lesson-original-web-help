@@ -343,7 +343,7 @@ footer{
 .red-square-shadow{
     position: absolute;
     top: 280vh;
-    right: -10vw;
+    right: 0vw;
     z-index: -1;
 }
 
@@ -548,6 +548,7 @@ footer{
 
 
     .blue-circle-shadow-sp{
+        display: block;
         position: absolute;
         top: 170vh;
         right: 0;
@@ -555,6 +556,7 @@ footer{
     }
 
     .green-triangle-shadow-sp{
+        display: block;
         position: absolute;
         top: 260vh;
         left: 0vw;
@@ -562,20 +564,24 @@ footer{
     }
 
     .red-square-shadow-sp{
+        display: block;
         position: absolute;
-        top: 360vh;
+        top: 370vh;
         right: 0vw;
         z-index: -1;
     }
 
     .black-circle-shadow-sp{
+        display: block;
         position: absolute;
         top: 470vh;
         left: 0;
         z-index: -1;
     }
 
-
+    .other-text{
+        margin-top: 8px;
+    }
 
     .footer-masa-pc{
         position: absolute;
