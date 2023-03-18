@@ -70,14 +70,18 @@ header{
     /* background-image: url(../img/yellow-circle.png); */
     position: absolute;
     top: 0%;
-    left: 87vw;
+    right: 0;
     z-index: 10;
 }
 
 .red-square{
     position: absolute;
     top: 40vh;
-    left: 77vw;
+    right: 0vw;
+}
+
+.red-square-sp{
+    display: none;
 }
 
 .title{
@@ -90,13 +94,15 @@ header{
 }
 
 .nav{
-    
+    max-width: 70vw;
+    width: 100%;
     position: absolute;
     top: 65%;
     left: 53%;
     /* tarnslate で要素の縦横それぞれ50%分の長さを動かすことで、要素を中央にする. */
     transform: translate(-50%, -50%);
-    width: 70vw;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 section{
@@ -173,7 +179,6 @@ section{
     border: solid 6px #E83E37;
     border-radius: 70px;
     text-align: center;
-    
     z-index: 30;
 }
 
@@ -237,8 +242,6 @@ section{
     left: 30px;
 }
 
-
-
 .contents{
     height: 300px;
     width: 67vw;
@@ -276,7 +279,6 @@ section{
 .content-yellow{
     background-color: #F0C11A;
 }
-
 
 .other{
     height: 80vh;
@@ -333,7 +335,7 @@ footer{
     
     position: absolute;
     top: 130vh;
-    left: 70vw;
+    right: 0;
     z-index: -1;
 }
 
@@ -361,7 +363,7 @@ footer{
 .green-circle-shadow{
     position: absolute;
     top: 458vh;
-    left: 74vw;
+    right: 0;
     z-index: -1;
 }
 
@@ -391,8 +393,8 @@ footer{
         width: 100%;
     }
 
-    h1{
-        margin: 0 auto;
+    header{
+        height: 100vh;
     }
     .lit-logo{
         position: absolute;
@@ -401,25 +403,62 @@ footer{
         z-index: 100;
     }
 
-    .nav{
-        width: 90vw;
+    h1{
+        font-size: 32px;
+        width: 100vw;
         margin: 0 auto;
     }
+
+    .nav{
+        position: absolute;
+        top: 87vh;
+        width: 100vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .btn{
-        width: 20vw;
+        width: 85px;
+        height: 40px;
+        font-size: 14px;
+        padding: 6px 15px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
     }
 
     .green-circle{
         position: absolute;
-        left: -120vw;
+        left: -140vw;
         top: -40vh;
         z-index: -1;
     }
 
+    .yellow-circle{
+        position: absolute;
+        top: -20vh;
+        right: 0%;
+    }
+
     .blue-triangle{
         position: absolute;
-        left: -130vw;
+        top: 15vh;
+        left: -140vw;
         z-index: -2;
+    }
+
+    .red-square{
+        display: none;
+    }
+
+    .red-square-sp{
+        display: block;
+        position: absolute;
+        top: 35vh;
+        right: 0;
     }
 
     .title{
@@ -428,8 +467,8 @@ footer{
 
     .teacher{
         position: relative;
-        top: 70px;
-        left: auto;
+        top: 15vh;
+        left: 6vw;
         z-index: 0;
         width: 100px;
     }
@@ -437,7 +476,7 @@ footer{
     .thinking-man{
         width: 40vw;
         position: absolute;
-        top: 80vh;
+        top: 60vh;
         left: 0;
         z-index: 0;
         width: 100px;
@@ -447,6 +486,76 @@ footer{
         width: 120px;
         position: absolute;
         left: 65vw;
-
     }
+
+    .idea-girl{
+        width: 100px;
+        position: absolute;
+        top: 55vh; 
+        left: 250px;
+        z-index: 10;
+    }
+
+    /* section */
+
+    .section-box .caption{
+        font-size: 18px;
+        margin: 0;
+        padding: 10px 20px;
+        transform: translateY(-50%) translateX(0%);
+    }
+
+    .section-text{
+        margin: -20px auto;
+        font-size: 13px;
+    }
+
+
+
+    .contents{
+        margin: 5px auto;
+    }
+
+
+
+    .content{
+        font-size: 12px;
+        width: 90px;
+        height: 70px;
+        line-height: 15px;
+    }
+
+    .first-text{
+        display: none;
+    }
+
+    .masa,
+    .masa-happy,
+    .masa-pc,
+    .footer-masa-pc{
+        display: none;
+    }
+
+
+    .blue-circle-shadow,
+    .green-circle-shadow,
+    .red-square-shadow,
+    .black-circle-shadow{
+        display: none;
+    }
+
+    .footer-masa-pc{
+        position: absolute;
+        left: -200px;
+        z-index: 20;
+    }
+
+
+    .black-circle-shadow{
+        position: absolute;
+        width: 100px;
+        left: -100vw;
+    }
+
+
 }
