@@ -307,12 +307,6 @@ section{
     left: 65vw;
 }
 
-
-
-
-
-
-
 .lit-logo-footer{
     width: 300px;
     margin: 22px 0 30px;
@@ -342,14 +336,14 @@ footer{
 .green-triangle-shadow{
     position: absolute;
     top: 240vh;
-    left: -18vw;
+    left: 0vw;
     z-index: -1;
 }
 
 .red-square-shadow{
     position: absolute;
     top: 280vh;
-    left: 77vw;
+    right: -10vw;
     z-index: -1;
 }
 
@@ -365,6 +359,14 @@ footer{
     top: 458vh;
     right: 0;
     z-index: -1;
+}
+
+.black-circle-shadow-sp,
+.green-triangle-shadow-sp,
+.red-square-shadow-sp,
+.black-circle-shadow-sp,
+.blue-circle-shadow-sp{
+    display: none;
 }
 
 .fuwatAnime {
@@ -538,6 +540,7 @@ footer{
 
     .blue-circle-shadow,
     .green-circle-shadow,
+    .green-triangle-shadow,
     .red-square-shadow,
     .black-circle-shadow{
         display: none;
