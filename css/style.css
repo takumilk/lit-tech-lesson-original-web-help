@@ -536,13 +536,43 @@ footer{
         display: none;
     }
 
-
     .blue-circle-shadow,
     .green-circle-shadow,
     .red-square-shadow,
     .black-circle-shadow{
         display: none;
     }
+
+
+    .blue-circle-shadow-sp{
+        position: absolute;
+        top: 170vh;
+        right: 0;
+        z-index: -1;
+    }
+
+    .green-triangle-shadow-sp{
+        position: absolute;
+        top: 260vh;
+        left: 0vw;
+        z-index: -1;
+    }
+
+    .red-square-shadow-sp{
+        position: absolute;
+        top: 360vh;
+        right: 0vw;
+        z-index: -1;
+    }
+
+    .black-circle-shadow-sp{
+        position: absolute;
+        top: 470vh;
+        left: 0;
+        z-index: -1;
+    }
+
+
 
     .footer-masa-pc{
         position: absolute;
