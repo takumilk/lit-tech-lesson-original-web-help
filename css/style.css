@@ -94,11 +94,11 @@ header{
 }
 
 .nav{
-    max-width: 70vw;
+    max-width: 100vw;
     width: 100%;
     position: absolute;
     top: 65%;
-    left: 53%;
+    left: 66%;
     /* tarnslate で要素の縦横それぞれ50%分の長さを動かすことで、要素を中央にする. */
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -304,6 +304,11 @@ section{
 
 .content-yellow:hover{
     color: #F0C11A;
+}
+
+.btn-other:hover{
+    color: #1791CB;
+    border: solid 1px #1791CB;
 }
 
 
