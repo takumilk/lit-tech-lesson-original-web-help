@@ -132,18 +132,22 @@ section{
 .btn-pc:hover{
     color: #E83E37;
     background: #fff;
+    border: 2px solid #E83E37;
 }
 .btn-first:hover{
     color: #1791CB;
     background: #fff;
+    border: 2px solid #1791CB;
 }
 .btn-header:hover{
     color: #66AE32;
     background: #fff;
+    border: 2px solid #66AE32;
 }
 .btn-text:hover{
     color: #F0C11A;
     background: #fff;
+    border: 2px solid #F0C11A;
 }
 
 .btn-first,
@@ -244,7 +248,7 @@ section{
 
 .contents{
     height: 300px;
-    width: 67vw;
+    width: 68vw;
     margin: 0 auto;
     /* background-color: rgb(179, 163, 163); */
 }
@@ -279,6 +283,29 @@ section{
 .content-yellow{
     background-color: #F0C11A;
 }
+
+.content:hover{
+    background: #fff;
+}
+
+.content-red:hover{
+    color: #E83E37;
+    border: solid 2px #E83E37;
+}
+
+.content-blue:hover{
+    color: #1791CB;
+    border: solid 2px #1791CB;
+}
+
+.content-green:hover{
+    color: #66AE32;
+}
+
+.content-yellow:hover{
+    color: #F0C11A;
+}
+
 
 .other{
     height: 80vh;
