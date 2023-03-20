@@ -411,7 +411,7 @@ footer{
     display: none;
 }
 
-#page-top {
+.page-top {
     position: fixed;
     right: 50px;
     bottom: 50px;
@@ -425,7 +425,7 @@ footer{
     padding: 0 0 0 35px;
     border-top: solid 1px;
 }
-#page-top::before {
+.page-top::before {
     content: "";
     display: block;
     position: absolute;
@@ -669,5 +669,10 @@ footer{
         left: -100vw;
     }
 
+    .page-top {
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+    }
 
 }
