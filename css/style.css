@@ -105,7 +105,7 @@ header{
     max-width: 80vw;
     width: 57%;
     position: absolute;
-    top: 65%;
+    top: 63%;
     left: 50%;
     margin: 0 auto;
     /* tarnslate で要素の縦横それぞれ50%分の長さを動かすことで、要素を中央にする. */
@@ -121,11 +121,12 @@ section{
 
 .btn{
     text-decoration:none;
-    padding: 20px;
+    padding: 20px 0px;
     color: #ffffff;
     border-radius: 50px;
     display: inline-block;
     text-align: center;
+    align-items: center;
     width: 12vw;
     margin: 1vw;
     /* box-shadow: -7px 10px 22px -4px rgba(0,0,0,0.6); */
@@ -461,15 +462,15 @@ footer{
     100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }
 
-@media all and (max-width: 1440px){
+@media all and (max-width: 1470px){
     .nav{
         width: 100vw;
     }
     .btn{
-        width: 20vw;
+        width: 17vw;
     }
     .head-top{
-        display: block;
+        display: none;
     }
 }
 
